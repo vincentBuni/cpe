@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lan="fr">
+    <head>
+        <title >Panier</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../image/global/noun-traveling-4582352(1).png">
+        <link rel="stylesheet" href="../style/footer.css">
+        <link rel="stylesheet" href="../style/header.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/footer.css">
+        <link rel="stylesheet" href="../style/carte_personaliser.css">
+    </head>
+    <body>  
+
+            <b>Ville : </b>
+            <select name="ville" id="ville" onchange="changeVille()">
+                <option value="">--Choisir la ville--</option>
+            </select>
+        <table id="barre outil">
+            <tr>
+                
+                <td><h3>taille  : </h3></td>
+                <td><h3>couleur  : </h3></td>
+                <td><h3>forme  : </h3></td>
+                <td><h3>type  : </h3></td>
+                <td><h3>police  : </h3></td>
+                <td><h3>texte : </h3></td>
+            </tr>
+            <tr>
+            
+
+            <td><input id="taille" type="number" min="1" value="12"></td>
+            <td><input id="color" type="color" value="couleur"></td>
+            <td><select id="forme" name="forme" id="forme">
+                <option value="">--Choisir la forme--</option>
+                <option value="rectangle">rectangle</option>
+                <option value="rond">rond</option>
+                <option value="triangle">triangle</option>
+                <option value="trait">trait</option>
+            </select>
+            </td>
+            <td><select id ="type" name="type" id="type">
+                <option value="">--Choisir du type--</option>
+                <option value="plein">plein</option>
+                <option value="vide">vide</option>
+            </select>
+            </td>
+
+            <td><select id="police" name="police" id="police">
+                <option value="serif">serif</option>
+                <option value="Arial">Arial</option>
+                </select>
+            </td>
+            <td><input id="text" type="text" name="texte" ></td>
+            <td><button id="Valider" onclick="validerText(event)">valider Text</button></td>
+            </tr>
+        </table>
+
+        <!--<img class="image_destination" src="../image/destination/cable-car-gb276d4c78_1920.jpg" alt="ville de Grenoble">-->
+
+
+        <!--<canvas id = "verso" onclick="ModifCanva(event)" width="400" height="300" background-color="red">
+
+        </canvas>-->
+        <canvas id="verso" onclick="ModifCanva(event)"  width="800" height="500">
+
+        </canvas>
+        <br>
+
+        <section id="address">
+            <h2> Adresse destination</h2>
+            <table>
+                <tr>
+                    <td>
+                        Nom Prenom* : 
+                    </td>
+                    <td>
+                        <input id="nomCarte" type="text" name="texte" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rue* :
+                    </td>
+                    <td>
+                        <input id="rueCarte" type="text" name="texte" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Complement :
+                    </td>
+                    <td>
+                        <input id="complementCarte" type="text" name="texte" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Code postale* :
+                    </td>
+                    <td>
+                        <input id="cpCarte" type="text" name="texte" minlength="5" maxlength="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ville* :
+                    </td>
+                    <td>
+                        <input id="villeCarte" type="text" name="texte" >
+                    </td>
+                </tr>
+            </table>
+            <button onclick="validerAdresse(event)"> valider Adresse</button>
+        </section>
+        
+        <section id="message">
+            <button onclick="envoyerMessage(event)"> Envoyer Message</button>
+            <textarea id="messageCarte" type="textarea" name="textearea" ></textarea>
+        </section>
+
+
+        <table id="rectoComplet">
+            <tr>
+            <td><div id="messageZone">
+
+            </div>
+            </td>
+            <td>
+            <canvas id = "recto" onclick="clickEvent(event)" width="400" height="500">
+            </canvas>
+        </td>
+            </tr>
+        </table>
+
+        
+
+        <script type="text/javascript" src="../js/header.js"></script>
+        <include src="./header.html"></include>
+
+        <script type="text/javascript" src="../js/carte_personaliser.js"></script>
+
+
+        <footer>
+            <address> Campus Lyontech <br>
+                 3 Rue Victor Grignard <br>
+                 69100 Villeurbanne <br>
+            </address>
+            <b><a id="tel" href="tel:0472431700" >0472431700</a></b>
+            </br>
+            <a id="mail" href="mailto:agence.voyage@gmail.fr">mail</a>
+            <br>
+            <a href="contact.html">
+                <button id="nousContacter">Nous contacter</button>
+            </a>
+        </footer>
+    </body>
+</html>

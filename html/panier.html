@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lan="fr">
+    <head>
+        <title >Panier</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../image/global/noun-traveling-4582352(1).png">
+        <link rel="stylesheet" href="../style/header.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/footer.css">
+    </head>
+    <body>  
+        <script type="text/javascript" src="../js/header.js"></script>
+        <include src="./header.html"></include>
+
+        <section id="centre">
+            <section id="droite">
+                <h2>Recapitulatif panier :</h2>
+                <section id="info_commande">
+                    <span id="Dates_span">Dates: Du XXX au XXX</span>
+                    <span id="Personnes_span">Nombre de personnes: 0</span>
+                    <span id="Animaux_span">Avec animaux: ?</span>
+                    <span id="Dejeuner_span">Avec petit déj: ?</span>
+                    <span id="prix" >Prix : </span>
+                    <span id="prix_total_val"> 0€ </span>
+                </section>
+            </section>
+            
+            
+            <section id="gauche">
+                <form action="">
+                <h2>Informations Personnelles :</h2>
+                <h3>Identité : </h3>
+                Nom* :<br>
+                <input type="text" name="nom" required><br>
+                Prénom* : <br>
+                <input type="text" name="prenom" required><br>
+                <h3>Adresse : </h3>
+                Rue :<br>
+                <input type="text" name="rue"><br>
+                Code Postal : <br>
+                <input type="number" name="cp"><br>
+                Ville : <br>
+                <input type="text" name="ville"><br>
+                Email* : <br>
+                <input type="email" name="email" required><br>
+                <a href="a.html">
+                    <button>Valider</button>
+                </a>
+                </form>
+            </section>
+
+            <div id="info_Personnelle">
+                
+                
+            </div>
+
+        </section>
+       
+        
+
+        <footer>
+            <address> Campus Lyontech <br>
+                 3 Rue Victor Grignard <br>
+                 69100 Villeurbanne <br>
+            </address>
+            <b><a id="tel" href="tel:0472431700" >0472431700</a></b>
+            </br>
+            <a id="mail" href="mailto:agence.voyage@gmail.fr">mail</a>
+            <br>
+            <a href="contact.html">
+                <button id="nousContacter">Nous contacter</button>
+            </a>
+        </footer>
+
+        <script src="../js/panier.js"></script>
+    </body>
+</html>

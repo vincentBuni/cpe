@@ -1,0 +1,103 @@
+#barreSelection
+{
+    background-color: white;
+    width: 100vw;
+    height: 5vw;
+    font-size: 2em;
+    padding : 2%
+}
+
+.checkbox{
+    background-color: rebeccapurple;
+    margin-right: 5%;
+    width: 1.5vw;
+    height: 1.5vw;
+
+}
+
+.checkboxZone{
+    padding: 3%;
+    width: 18vw;
+}
+
+
+* {
+    padding-top: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ADCAD6;
+    padding-top: 7vw;
+}
+.centre {
+    padding: 5vw;
+}
+.destination:hover {
+    border-style: solid;
+    border-width: 5px;
+    border-left-color: #F18F01;
+    border-top-color: #F18F01;
+    border-right: none;
+    border-bottom: none;
+    
+    
+}
+.destination {
+    border-style: solid;
+    border-width: 5px;
+    size: 90vw;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 25vw;
+    background-size: cover;
+    height: 20vw;
+    text-align: center;
+    border-radius: 5%;
+    border-right-color: rgb(222, 222, 222);
+    border-bottom-color: rgb(222, 222, 222);
+    border-top: none;
+    border-left: none;
+}
+
+.image_destination {
+    width: 20vw;
+    height: 20vw;
+}
+
+.centre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vw;
+    /*grid-auto-rows: minmax(20, auto);*/
+}
+#grenoble {
+    /*grid-column: 1 / 2;
+    grid-row: 1;*/
+    background-image: url("../image/destination/grenoble.jpg");
+}
+#lyon {
+    /*grid-column: 1 / 2;
+    grid-row: 2;*/
+    background-image: url("../image/destination/lyon.jpg");
+}
+#toulouse {
+    /*grid-column: 2 / 2;
+    grid-row: 2;*/
+    background-image: url("../image/destination/toulouse.jpg");
+}
+#nantes {
+    /*grid-column: 1 / 2;
+    grid-row: 3;*/
+    background-image: url("../image/destination/nantes.jpg");
+}
+#marseille {
+    /*grid-column: 2 / 2;
+    grid-row: 3;*/
+    background-image: url("../image/destination/marseille.jpg");
+}
+#paris {
+    /*grid-column: 1/ 2;
+    grid-row: 4;*/
+    background-image: url("../image/destination/paris.jpg");
+}

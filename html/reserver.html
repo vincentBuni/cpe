@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan="fr">
+    <head>
+        <title >Reserver</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../image/global/noun-traveling-4582352(1).png">
+        <link rel="stylesheet" href="../style/header.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/reservation.css">
+        <link rel="stylesheet" href="../style/footer.css">
+    </head>
+    <body>  
+        <script type="text/javascript" src="../js/header.js"></script>
+        <include src="./header.html"></include>
+
+            <div id="ref_ville">
+                <h2>Informations sur la réservation: </h2>
+            </div>
+            <div id="information_demander">
+                <div id="info_reservation_demander : ">
+                    <h2>Choix de Réservation : </h2>
+                    Date Debut* :
+                    <input type="date" name="date_debut" id="date_debut" onchange="changeDateDebut(event);" min=2022-02-14 required>
+                    Date Fin* :
+                    <input type="date" name="date_fin" id="date_fin" onchange="changeDateFin(event);" min=2022-02-14 required><br>
+                    <h3>Option : </h3>
+                    <label id="label_petit_dej" for="avec_petit_dej"><br>avec petit dejeuner: </label>
+                    <input type="checkbox" name="avec_petit_dej"  id="avec_petit_dej" onchange="changePetitdej(event)">
+                    <label id="label_avec_animal" for="avec_animal"> <br> avec animal: </label>
+                    <input type="checkbox" name="avec_animal" id="avec_animal" onchange="avecAnimal(event)">
+                    
+                </div>
+                
+            </div>
+            <b id="prix_total_txt">Prix Total : </b>
+            <b id="prix_total_val">0€</b><br>
+            <input type="submit" value="reserver" id="reserve_button">
+        <footer>
+            <address> Campus Lyontech <br>
+                 3 Rue Victor Grignard <br>
+                 69100 Villeurbanne <br>
+            </address>
+            <b><a id="tel" href="tel:0472431700" >0472431700</a></b>
+            </br>
+            <a id="mail" href="mailto:agence.voyage@gmail.fr">mail</a>
+            <br>
+            <a href="contact.html">
+                <button id="nousContacter">Nous contacter</button>
+            </a>
+        </footer>
+        <script src="../js/reserver.js"></script>
+    </body>
+</html>

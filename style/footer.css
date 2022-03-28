@@ -1,0 +1,25 @@
+footer{
+text-align: center;
+padding: 1vw;
+background-color:#F18F01;
+display: list-item;
+
+}
+
+#tel{
+    text-decoration:none; 
+    color:black;
+}
+
+#nousContacter{
+    border-style: solid;
+    border-color: rgb(222, 222, 222);
+    background-color:#F18F01;
+    font-size: 2em;
+}
+
+#nousContacter:hover{
+
+    background-color:#FFAF31;
+
+}

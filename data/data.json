@@ -1,0 +1,51 @@
+{
+    "paris" : 
+    {
+        "prix" : 75,
+        "name" : "Paris",
+        "image" : "paris.jpg",
+        "avecAnimaux" : false,
+        "avecPetitdej" : false
+    },
+    "grenoble" :
+    {
+        "prix"  : 38,
+        "name" : "Grenoble",
+        "image" : "grenoble.jpg",
+        "avecAnimaux" : true,
+        "avecPetitdej" : true
+    },
+    "lyon" :
+    {
+        "prix"  : 69,
+        "name" : "Lyon",
+        "image" : "lyon.jpg",
+        "avecAnimaux" : true,
+        "avecPetitdej" : false
+    },
+    "toulouse" :
+    {
+        "prix"  : 31,
+        "name" : "Toulouse",
+        "image": "toulouse.jpg",
+        "avecAnimaux" : false,
+        "avecPetitdej" : true
+    },
+    "nantes" :
+    {
+        "prix"  : 44,
+        "name" : "Nantes",
+        "image" : "nantes.jpg",
+        "avecAnimaux" : false,
+        "avecPetitdej" : true
+    },
+    "marseille" :
+    {
+        "prix"  : 13,
+        "name" : "Marseille",
+        "image" : "marseille.jpg",
+        "avecAnimaux" : false,
+        "avecPetitdej" : false
+    }
+
+}

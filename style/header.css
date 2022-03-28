@@ -1,0 +1,39 @@
+
+
+header ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #99C24D;
+    list-style-type: none;
+    height: 6vw;
+    padding: 0vw;
+
+  }
+
+
+  header li {
+  float: left;
+}
+
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+
+header li h1 {
+    padding-top: 3vw;
+}
+header li a:hover {
+  background-color: rgb(196, 190, 190);
+  background-color: #A9D25D;
+}
+header li img {
+  height: 4vw;
+}

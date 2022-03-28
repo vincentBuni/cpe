@@ -1,0 +1,41 @@
+#recto{
+    
+    background-color: white;
+
+    /*width: 500px;*/
+    /*margin: 3%;*/
+    /*height: 300px;*/
+}
+
+#verso{
+    border-style: solid;
+    background-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    /*width: 500px;*/
+    margin: 3%;
+    /*height: 300px;*/
+}
+
+#messageZone{
+    /*padding: 3%;*/
+    color: black;
+    font-size: 18px;
+    background: white;
+
+    width: 400px;
+    height: 500px;
+
+
+}
+
+#rectoComplet{
+    border-style: solid;
+    background-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+#rectoComplet {
+    margin: 3%;
+}

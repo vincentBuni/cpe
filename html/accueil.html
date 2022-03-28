@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lan="fr">
+    <head>
+        <title>Agence voyage</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../style/header.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="icon" href="../image/global/noun-traveling-4582352(1).png">
+        <link rel="stylesheet" href="../style/footer.css">
+        
+    </head>
+    <body>
+        
+        <section id="barreSelection">
+            <table>
+                <tr>
+                    <td class="checkboxZone">
+                        <input type="checkbox" class="checkbox" id="avecAnimaux" onchange="changeAnimaux(event)" name="" value=""/>
+                        Animaux accepter
+                        
+                    </td>
+                    <td class="checkboxZone">
+                        <input type="checkbox" class="checkbox" id="avecPetitDej" onchange="changePetitdej(event)" >Petit Déjeuner</input>
+                    </td>
+                </tr>
+            </table>
+        </section>
+       <!--<header>
+            <nav>
+            <ul>
+                <li>
+                    <a id="icone">
+                        <img id="icone" src="../image/global/noun-traveling-4582352(1).png" alt="Logo">
+                    </a>
+                </li>
+                <li>
+                    <h1 id="title" >Travel'air</h1>
+                </li>
+                <li class="droite"> 
+                    <a href="panier.html">
+                        <img id="panier" src="../image/global/noun-basket-4428284.png" alt="logo panier">
+                    </a>
+                </li>
+                <li class="droite"> 
+                    <a href="carte_personaliser.html"> Carte personalisée</a>
+                </li>
+                <li class="droite"> 
+                    <a href="contact.html"> Contact</a>
+                </li>
+            </ul>
+            </nav> 
+        </header>--> 
+        <section id="centre" class="centre">
+        </section>
+
+
+        <template id="myTemplayte">
+            
+            <div>
+            <div class="destination" id={{nomRef}} onclick="reserver(event,'reserver.html?ville={{nomRef}}')">
+                <h2 class="name_ville">{{nameVille}}</h2>
+                <h2 class="prix"> {{prix}} €/nuit</h2>
+                <h3 class="weather">{{weather}}</h3>
+                <!--<a href="reserver.html?ville={{nomRef}}">
+                    <button class="bouton_reserver"> Réserver </button>
+                </a>-->
+            </div>
+            </div>
+            
+        </template>
+        <script type="text/javascript" src="../js/header.js"></script>
+      <include src="./header.html"></include>
+      <footer>
+        <address> Campus Lyontech <br>
+             3 Rue Victor Grignard <br>
+             69100 Villeurbanne <br>
+        </address>
+        <b><a id="tel" href="tel:0472431700">0472431700</a></b>
+        </br>
+        <a id="mail" href="mailto:agence.voyage@gmail.fr">mail</a>
+        <br>
+        <a href="contact.html">
+            <button id="nousContacter">Nous contacter</button>
+        </a>
+    </footer>
+        <script src="../js/acceuil.js"></script>
+        
+    </body>
+</html>
