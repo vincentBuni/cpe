@@ -73,7 +73,7 @@ fetch('../data/data.json')
     elem.append(img)
 
     txt.setAttribute("class","info_res_txt")
-    txt.innerHTML = "<b> Ville : </b>" + json[valeur]["name"] + "<br><b> Prix : </b>" + json[valeur]["prix"] + "€/Nuit <br>" 
+    txt.innerHTML = "<h2>Information réservation :</h2> <br> <b> Ville : </b>" + json[valeur]["name"] + "<br><b> Prix : </b>" + json[valeur]["prix"] + "€/Nuit <br>" 
     elem.append(txt) 
 
     console.log(Difference_In_Day)
@@ -103,13 +103,15 @@ function changeDateDebut(e)
     var champDate = document.getElementById('date_debut')
    // console.log(champDate.value)
 
+   var date2 = new Date(document.getElementById('date_debut').value);
+   document.getElementById('date_fin').setAttribute("min",date2.getFullYear() + "-" +("0"+(date2.getMonth()+1)).slice(-2)+ "-" + ("0"+(date2.getDate()+1)).slice(-2) )
    if (document.getElementById('date_fin').value != "" && document.getElementById('date_debut').value != "")
    {
     var date1 = new Date(document.getElementById('date_fin').value);
-    var date2 = new Date(document.getElementById('date_debut').value);
+    
     var Difference_In_Time = date1.getTime() - date2.getTime();
 
-    document.getElementById('date_fin').setAttribute("min",date2.getFullYear() + "-" +("0"+(date2.getMonth()+1)).slice(-2)+ "-" + ("0"+(date2.getDate()+1)).slice(-2) )
+    
    
 
     Difference_In_Day = Difference_In_Time / (1000 * 3600 * 24);
@@ -133,6 +135,8 @@ function changeDateDebut(e)
    // console.log(champDate.value)
    // console.log( Date.parse(Date(champDate.value)))
 
+   var date1 = new Date(document.getElementById('date_fin').value);
+   document.getElementById('date_debut').setAttribute("max",date1.getFullYear() + "-" +("0"+(date1.getMonth()+1)).slice(-2)+ "-" + ("0"+(date1.getDate()+1)).slice(-2) )
    if (document.getElementById('date_fin').value != "" && document.getElementById('date_debut').value != "")
    { 
         var date1 = new Date(document.getElementById('date_fin').value);
@@ -142,7 +146,7 @@ function changeDateDebut(e)
 
 
        // document.getElementById('date_fin').setAttribute("min",date1.getFullYear() + "-" +("0"+(date1.getMonth()+1)).slice(-2)+ "-" +( date1.getDate()+1) )
-        document.getElementById('date_debut').setAttribute("max",date1.getFullYear() + "-" +("0"+(date1.getMonth()+1)).slice(-2)+ "-" + ("0"+(date1.getDate()+1)).slice(-2) )
+        
    }
    if (prix && Difference_In_Day)
     {

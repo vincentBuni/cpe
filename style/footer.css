@@ -1,7 +1,7 @@
 footer{
 text-align: center;
 padding: 1vw;
-background-color:#F18F01;
+background-color:rgb(180,226,254);
 display: list-item;
 
 }
@@ -14,12 +14,13 @@ display: list-item;
 #nousContacter{
     border-style: solid;
     border-color: rgb(222, 222, 222);
-    background-color:#F18F01;
+    background-color: rgb(159,173,243);
     font-size: 2em;
 }
 
 #nousContacter:hover{
 
-    background-color:#FFAF31;
+    background-color: rgb(200,220,255);
 
 }
+

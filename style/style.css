@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
 #barreSelection
 {
     background-color: white;
@@ -24,14 +27,26 @@
 * {
     padding-top: 0;
     margin: 0;
+    font-family: 'Monda', sans-serif;
+    
 }
 
 body{
-    background-color: #ADCAD6;
+    
+    background-image  : url("../image/arrierePlan.jpg"); 
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size : 100vw;
+    width: 100vw;
+    /*height: 100vw;*/
+    backdrop-filter: blur(8px);
     padding-top: 7vw;
+    font-family: 'Smokum', cursive;
+    background-position-y: top;
 }
 .centre {
     padding: 5vw;
+    
 }
 .destination:hover {
     border-style: solid;
@@ -40,7 +55,7 @@ body{
     border-top-color: #F18F01;
     border-right: none;
     border-bottom: none;
-    
+    cursor : pointer;
     
 }
 .destination {
@@ -48,7 +63,8 @@ body{
     border-width: 5px;
     size: 90vw;
     font-style: oblique;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-family: 'Francois One', sans-serif;
     width: 25vw;
     background-size: cover;
     height: 20vw;
@@ -100,4 +116,13 @@ body{
     /*grid-column: 1/ 2;
     grid-row: 4;*/
     background-image: url("../image/destination/paris.jpg");
+}
+
+.textDestination{
+    background: rgba(255, 255, 255, 50%);
+    border-top-left-radius: 0.9vw;
+    border-top-right-radius: 0.9vw;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 10%);
+
 }

@@ -16,7 +16,7 @@
                 <tr>
                     <td class="checkboxZone">
                         <input type="checkbox" class="checkbox" id="avecAnimaux" onchange="changeAnimaux(event)" name="" value=""/>
-                        Animaux accepter
+                        Animaux accepté
                         
                     </td>
                     <td class="checkboxZone">
@@ -58,9 +58,11 @@
             
             <div>
             <div class="destination" id={{nomRef}} onclick="reserver(event,'reserver.html?ville={{nomRef}}')">
-                <h2 class="name_ville">{{nameVille}}</h2>
-                <h2 class="prix"> {{prix}} €/nuit</h2>
-                <h3 class="weather">{{weather}}</h3>
+                <div class="textDestination">
+                    <h2 class="name_ville">{{nameVille}}</h2>
+                    <h2 class="prix"> {{prix}} €/nuit</h2>
+                    <h3 class="weather">{{weather}}</h3>
+                </div>
                 <!--<a href="reserver.html?ville={{nomRef}}">
                     <button class="bouton_reserver"> Réserver </button>
                 </a>-->

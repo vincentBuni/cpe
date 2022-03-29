@@ -1,4 +1,39 @@
 #img_res {
     width: 30vw;
     height: 20vw;
+
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin-left: 25px;
+   
+}
+
+#formulaire{
+    background: rgba(255, 255, 255, 50%);
+    margin: 1%;
+    padding: 1%;
+    width: 28vw;
+}
+
+.info_res_txt{
+    grid-column: 2 / 2;
+    grid-row: 1;
+    background: rgba(255, 255, 255, 50%);
+    position: relative;
+    bottom: 0;
+    width: 19vw;
+    height: 6vw;
+    padding: 3%;
+    border: solid;
+    border-radius: 20px;
+    border-color:rgba(255, 255, 255, 20%);
+
+    
+
+}
+#ref_ville{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 0vw;
+    column-gap: 3vw;
 }
